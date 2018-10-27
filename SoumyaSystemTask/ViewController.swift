@@ -11,47 +11,47 @@ import UIKit
 //struct User:Codable {
 //  var user: [UserDetails]
 //}
-struct UserDetails:Codable {
-  var id :Int
-  var name :String
-  var username:String
-  var email:String
-  var address:Address
-  var phone:String
-  var website:String
-  var company:Company
-}
-struct Address:Codable {
-  var street: String
-  var suite : String
-  var city: String
-  var zipcode : String
-  var geo: Geo
-}
-struct Geo:Codable {
-  var lat: String
-  var lng : String
-}
-struct Company:Codable {
-  var name: String
-  var catchPhrase : String
-  var bs: String
-}
+//struct UserDetails:Codable {
+//  var id :Int
+//  var name :String
+//  var username:String
+//  var email:String
+//  var address:Address
+//  var phone:String
+//  var website:String
+//  var company:Company
+//}
+//struct Address:Codable {
+//  var street: String
+//  var suite : String
+//  var city: String
+//  var zipcode : String
+//  var geo: Geo
+//}
+//struct Geo:Codable {
+//  var lat: String
+//  var lng : String
+//}
+//struct Company:Codable {
+//  var name: String
+//  var catchPhrase : String
+//  var bs: String
+//}
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
   @IBOutlet weak var TBV: UITableView!
   
   var namesArr = [String]()
-  var userDetails = [UserDetails]()
+  var userDetails = [UserData]()
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let aa = [UserDetails(id: 1, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284")),UserDetails(id: 2, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284")),UserDetails(id: 3, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284")),UserDetails(id: 4, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284"))]
+    let aa = [ UserData(id: 1, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284")),UserData(id: 2, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284")),UserData(id: 3, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284")),UserData(id: 4, name: "pasha", username: "pasha12", email: "pasha123@gmail.com", address:Address(street: "nagar", suite: "psa", city: "wgl", zipcode: "506310", geo: Geo(lat: "71.43", lng: "73.938")), phone: "9909090909", website: "www.ps.com", company: Company(name: "inc", catchPhrase: "peo 39438492 cb", bs: "9389284"))]
     
     let db = try! JSONEncoder().encode(aa)
     JSONEncoder().outputFormatting = .prettyPrinted
     let sc = String(bytes: db, encoding: .utf8)
-    let ds = try! JSONDecoder().decode([UserDetails].self, from: db)
+    let ds = try! JSONDecoder().decode([UserData].self, from: db)
     let bb = ds[3].id
     
  //   let b = ds.user
@@ -97,7 +97,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
       
      
         do {
-          self.userDetails = try JSONDecoder().decode([UserDetails].self, from: sd!)
+          self.userDetails = try JSONDecoder().decode([UserData].self, from: sd!)
  
         //  let b = ds[3].address.geo.lat
           

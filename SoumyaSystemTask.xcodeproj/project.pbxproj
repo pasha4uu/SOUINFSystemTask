@@ -14,6 +14,7 @@
 		656CDADE21842A6E00ECCEDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656CDADC21842A6E00ECCEDD /* LaunchScreen.storyboard */; };
 		656CDAE921842A6F00ECCEDD /* SoumyaSystemTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CDAE821842A6F00ECCEDD /* SoumyaSystemTaskTests.swift */; };
 		656CDAF421842A6F00ECCEDD /* SoumyaSystemTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CDAF321842A6F00ECCEDD /* SoumyaSystemTaskUITests.swift */; };
+		65877BB52184F130004C7482 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65877BB42184F130004C7482 /* UserData.swift */; };
 		658AB8AD21847A3F00A1594A /* UserDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AB8AC21847A3F00A1594A /* UserDetailsCell.swift */; };
 		658AB8AF21847A9F00A1594A /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658AB8AE21847A9F00A1594A /* UserDetailsView.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		656CDAEF21842A6F00ECCEDD /* SoumyaSystemTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoumyaSystemTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656CDAF321842A6F00ECCEDD /* SoumyaSystemTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoumyaSystemTaskUITests.swift; sourceTree = "<group>"; };
 		656CDAF521842A6F00ECCEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65877BB42184F130004C7482 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		658AB8AC21847A3F00A1594A /* UserDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsCell.swift; sourceTree = "<group>"; };
 		658AB8AE21847A9F00A1594A /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				656CDADF21842A6E00ECCEDD /* Info.plist */,
 				658AB8AC21847A3F00A1594A /* UserDetailsCell.swift */,
 				658AB8AE21847A9F00A1594A /* UserDetailsView.swift */,
+				65877BB42184F130004C7482 /* UserData.swift */,
 			);
 			path = SoumyaSystemTask;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				658AB8AF21847A9F00A1594A /* UserDetailsView.swift in Sources */,
 				656CDAD621842A6D00ECCEDD /* ViewController.swift in Sources */,
 				658AB8AD21847A3F00A1594A /* UserDetailsCell.swift in Sources */,
+				65877BB52184F130004C7482 /* UserData.swift in Sources */,
 				656CDAD421842A6D00ECCEDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

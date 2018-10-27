@@ -12,7 +12,7 @@ class UserDetailsView: UIViewController,UITableViewDelegate,UITableViewDataSourc
 
   @IBOutlet weak var userTBV: UITableView!
   var userDetails = [String]()
-  var user:UserDetails? = nil
+  var user:UserData? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
       self.userTBV.delegate = self
